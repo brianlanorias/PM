@@ -2,75 +2,72 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Products</title>
+    <title>Artisano</title>
     <link rel="stylesheet" href="style.css">
+
+    
+<!--------Links-------->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+    
+    
 </head>
 <body>
     
-
-    
-    
-    <div class="header2">
+    <div class="header3"> 
     <div class="container">
-     <div class="navbar">
+     
+        <div class="navbar">
             <div class="logo">
-             <a href=""><img src="images/logo.png" width="150px" height="150px">
+             <a href="artisano.html"><img src="images/logo.png" width="150px" height="150px">
             </a>
         </div>
+            
+        <div class="container">
+    
+    </div>
+            
         <nav>
             <ul id="MenuItems">
-               <li><a href="login-user.html"></a></li>
-                
-    
+                <li><a href="artisano.html">Home</a></li>
+                <li><a href="partner.html">Partners</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="account.html">Account</a></li>
                
-              
             </ul>
         </nav>
-        
+     
     </div>
     </div>
-    </div> 
+   </div> 
     
-<!--------Account-------->
-  <div class="account-page">
-         <div class="container">
-             <div class="row">
-              <div class="col-2">
-                  <img src="images/image1.jpg" width="100%">
-                 </div>
+<!--------fearures categories-------->
+ <div class="about">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/artisan-1.png" width="100%" id="ProductImg">   
+            </div>
              <div class="col-2">
-                 <div class="form-container">
-                  <div class="form-btn">
-                      <span onclick="login()">Log In</span>
-                    <span onclick="signup()">Sign Up</span>
-                      <hr id="Indicator">
+                 <div class="form-container2">
+                  <div class="form2-btn">
+                      <span onclick="login()">User Information</span>
+    
                      </div>
-                    
-                    <form action="connect.php" method="post" id="LoginForm">
+
+                     <form2  action="connect.php" method="post"> 
                         <input type="text" placeholder="Username" id="Username" name="Username">
-                        <input type="password" placeholder="Password" id="Password" name="Password">
-                        <button type="submit" class="btn">Login</button>
-                        <a href="">Forgot Password</a>
-                     </form> 
-                     
-                     <form  action="connect.php" method="post" id="SignupForm"> 
-                        <input type="text" placeholder="Username" id="Username" name="Username">
+                        <input type="text" placeholder="Name" id="Name" name="Username">
+                        <input type="text" placeholder="Address" id="Address" name="Address">
                         
                         <input type="Email" placeholder="Email" id="Email" name="Email">
-        
-                        <input type="Password" placeholder="Password" id="Password" name="Password">
-                        <button type="submit" class="btn">Sign Up</button>
-                     </form> 
+                           <button type="submit" class="btn"><li><a href="account.html">Log Out</a></li></button>
+                     </form2> 
                      
                  </div>
             </div>
-             </div>
-      </div>
+        </div>
     </div>
-
     
 <!--------footer-------->
          
@@ -107,29 +104,8 @@
         </div>
     </div>
 
-<!--------toggle-------->
-    
-    <script>
-    
-    var LoginForm = document.getElementById("LoginForm")   
-    var SignupForm = document.getElementById("SignupForm") 
-    var Indicator = document.getElementById("Indicator") 
-    
-    function signup(){
-        SignupForm.style.transform = "translateX(0px)";
-        LoginForm.style.transform = "translateX(0px)";
-        Indicator.style.transform = "translateX(100px)";
-    }
-    
-         function login(){
-        SignupForm.style.transform = "translateX(300px)";
-        LoginForm.style.transform = "translateX(300px)";
-        Indicator.style.transform = "translateX(0px)";
-    }
-    
-    </script>
-    
     
     
 </body>
 </html>
+v

@@ -10,7 +10,7 @@
      $stmt = $conn->prepare("insert into registration(Username, Email, Password)values(?, ?, ?)");
     $stmt->bind_param("sss",$Username, $Email, $Password);
     $stmt->execute();
-    echo "Registration Successfully...";
+    header("Location: artisano.html"),
     $stmt->close();
     $conn->close();
  }
